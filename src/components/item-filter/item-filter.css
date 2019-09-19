@@ -1,0 +1,10 @@
+.item-filter {
+    height: 70px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+};
+
