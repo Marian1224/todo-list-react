@@ -11,26 +11,12 @@
 
 .fa-check {
     font-size: 40px;
-    color: #75BA75;
-    opacity: 0;  
-}
-
-.fa-check:hover {
-    font-size: 40px;
-    color: #75BA75;
-    opacity: 1;  
+    color: #BADCBA;  
 }
 
 .fa-close {
     font-size: 40px;
-    color:#FF7F7F;
-    opacity: 0;
-}
-
-.fa-close:hover {
-    font-size: 40px;
-    color:#FF7F7F;
-    opacity: 1;
+    color: #FFBFBF;
 }
 
 .todo-list-item.done {

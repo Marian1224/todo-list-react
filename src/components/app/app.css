@@ -1,8 +1,13 @@
-body {
+/* body {
     background-color: #E7EAED;
     width: 600px;
     top: 40%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%); 
+}
+ */
+
+.container {
+    width: 50%;
 }

@@ -3,14 +3,14 @@ import TodoListItem from '../todo-list-items';
 import './todo-list.css';
 
 
-const TodoList = ( { todoArray, onDelete, onDone } ) => {
+const TodoList = ( { todoList, onDelete, onDone } ) => {
 
-    const element = todoArray.map((item) => {
+    const elements = todoList.map((item) => {
 
-        const { id, ...itemWithOutKey } = item;
+        const { id, ...itemParametrs } = item;
         return(
             <li key ={id}  className = 'list-group-item'> 
-                <TodoListItem {...itemWithOutKey}  
+                <TodoListItem {...itemParametrs}  
                                onDelete = {() => onDelete(id)} 
                                onDone = {() => onDone(id)}/> 
             </li>
@@ -19,7 +19,7 @@ const TodoList = ( { todoArray, onDelete, onDone } ) => {
 
     return (
         <ul className = 'list-group'>
-            { element }
+            { elements }
         </ul>
     )
 }

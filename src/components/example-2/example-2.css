@@ -1,0 +1,13 @@
+
+.list-example2 {
+    margin: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: #C7C7D1;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

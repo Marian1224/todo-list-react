@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 
+
 import Header from '../header';
 import InputPanel from '../input-panel';
 import TodoList from '../todo-list';
@@ -20,7 +21,7 @@ class App extends Component {
         
 };
 
-    filter(items, filter){
+    filterList(items, filter){
         switch(filter){
             case 'all': 
                 return items;
@@ -80,19 +81,26 @@ class App extends Component {
 
     render(){
         
-        const { todoData, filter } = this.state;
-        const filterItems = this.filter((todoData), filter);
+        const { todoData, filter, filterList } = this.state;
+        const filterItems = this.filterList(todoData, filter);
 
         const countDone = todoData.filter((el) => el.done).length;
-        const todoCount = todoData.length - countDone;
+        const todoItemCount = todoData.length - countDone;
 
     return(
-        <div>
+        <div className = 'container'>
+    
                 <Header />
                 <InputPanel addNewItem = { this.addItem }/>
-                <TodoList todoArray = { filterItems } onDelete = { this.deleteItem } onDone = { this.onDone }/>
-                <ItemFilter done = { todoCount } filter = { filter } onFilterChange = { this.onFilterChange }/>
-        
+                <TodoList 
+                    todoList = { filterItems } 
+                    onDelete = { this.deleteItem } 
+                    onDone = { this.onDone }/>
+                <ItemFilter 
+                    itemLeft = { todoItemCount } 
+                    filterList = { filterList } 
+                    onFilterChange = { this.onFilterChange }/>
+             
         </div>
     )
 }

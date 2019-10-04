@@ -1,0 +1,7 @@
+
+.title h1, h3, h6 {
+    margin-top: 50px;
+    line-height: 2.5;
+    text-align: center;
+    opacity: 0.5;
+}
