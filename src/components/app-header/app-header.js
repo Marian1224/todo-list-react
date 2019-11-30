@@ -10,14 +10,14 @@ import Title from '../title';
 
 const AppHeader = () => {
 
-    return(
+    return (
         <div>
             <Router>
-                <Route path = '/' component = { MyMenu }></Route>
-                <Route path = '/title' component = { Title }></Route>
-                <Route path = '/example-1/todo-list' component = { App }></Route>
-                <Route path = '/example-2/name-project-2' component = { Example2 }></Route>
-                <Route path = '/example-3/name-project-3' component = { Example3 }></Route>
+                <Route path='/' component={MyMenu}></Route>
+                <Route path='/reactTodoList' component={Title} exact></Route>
+                <Route path='/reactTodoList/example-1/todo-list' component={App} exact></Route>
+                <Route path='/reactTodoList/example-2/name-project-2' component={Example2} exact></Route>
+                <Route path='/reactTodoList/example-3/name-project-3' component={Example3} exact></Route>
             </Router>
         </div>
     )
