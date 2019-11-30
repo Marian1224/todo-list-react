@@ -14,10 +14,10 @@ const AppHeader = () => {
         <div>
             <Router>
                 <Route path='/' component={MyMenu}></Route>
-                <Route path='/reactTodoList' component={Title} exact></Route>
-                <Route path='/reactTodoList/example-1/todo-list' component={App} exact></Route>
-                <Route path='/reactTodoList/example-2/name-project-2' component={Example2} exact></Route>
-                <Route path='/reactTodoList/example-3/name-project-3' component={Example3} exact></Route>
+                <Route path='/todo-list-react' component={Title} exact></Route>
+                <Route path='/todo-list-react/example-1/todo-list' component={App} exact></Route>
+                <Route path='/todo-list-react/example-2/name-project-2' component={Example2} exact></Route>
+                <Route path='/todo-list-react/example-3/name-project-3' component={Example3} exact></Route>
             </Router>
         </div>
     )
