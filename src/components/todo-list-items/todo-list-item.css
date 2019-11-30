@@ -1,8 +1,5 @@
 
-.todo-list-item {
-    display: flex;
-    align-items: center;
-}
+
 
 .todo-list-item-label {
     cursor: pointer; 
@@ -17,6 +14,11 @@
 .fa-close {
     font-size: 40px;
     color: #FFBFBF;
+}
+
+.todo-list-item {
+    display: flex;
+    align-items: center;
 }
 
 .todo-list-item.done {
